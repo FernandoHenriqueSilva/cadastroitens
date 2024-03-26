@@ -1,0 +1,134 @@
+/* Estilo para a página index.html */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Utiliza a fonte Verdana */
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005f7f;
+}
+
+.view-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-buttons button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.view-buttons button:hover {
+    background-color: #005f7f;
+}
+
+/* Estilo para a página itens.php */
+
+/* Estilo para a página itens.php */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Utiliza a fonte Verdana */
+    background-image: url('img/background.jpg'); /* Adiciona o fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.item-box {
+    background-color: #ffffffb3; /* Cor do fundo com transparência */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.item-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-details {
+    margin-top: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.container-items h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.no-items {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilo para o container principal da página itens.php */
+
+.container-items {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-items h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}

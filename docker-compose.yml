@@ -1,0 +1,36 @@
+version: '3.8'
+
+networks:
+  net:
+    driver: bridge
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    networks:
+      - net
+    environment:
+      MYSQL_ROOT_PASSWORD: '123456'
+      MYSQL_DATABASE: 'itens'
+      MYSQL_USER: 'fernando'
+      MYSQL_PASSWORD: '123456'
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  itens:
+    build: .
+    image: php:8.2-apache
+    container_name: itens
+    networks:
+      - net
+    volumes:
+      - ./php.ini:/usr/local/etc/php/conf.d/php.ini
+      - ./:/var/www/html
+    ports:
+      - 89:80
+
+volumes:
+  mysql_data:
