@@ -22,7 +22,8 @@ services:
 
   itens:
     build: .
-    image: php:8.2-apache
+    #image: php:8.2-apache
+    image: itens
     container_name: itens
     networks:
       - net
@@ -30,7 +31,7 @@ services:
       - ./php.ini:/usr/local/etc/php/conf.d/php.ini
       - ./:/var/www/html
     ports:
-      - 89:80
+      - 3031:80
 
 volumes:
   mysql_data:
